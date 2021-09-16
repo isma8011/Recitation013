@@ -1,7 +1,7 @@
 /*validated 9/16*/
 body
 {
-  background-color:#c3f0f0;
+  background-color:#96f7f4;
   margin:auto;
   padding:30px;"
 }
@@ -45,7 +45,7 @@ nav
 
 a:link, a:visited
 {
-  color:#ffffff;
+  color:#fff000;
   text-decoration:underline;
 }
 
