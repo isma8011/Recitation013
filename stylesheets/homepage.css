@@ -1,0 +1,43 @@
+body
+{
+  background-color:#c3f0f0;
+  margin:auto;
+  padding:30px;"
+}
+
+h1
+{
+  font-family:Arial;
+  color:#012047;
+}
+
+h2
+{
+   font-family:Arial;
+   color:#012047;
+}
+
+section
+{
+   font-family:Arial;
+   width:300px;
+   text-align:left;
+   color:#012047;
+}
+
+nav
+{
+  text-align:center;
+  padding:10px;
+}
+
+a:link, a:visited
+{
+  color:#ffffff;
+  text-decoration:underline;
+}
+
+a:link:active, a:visited:active
+{
+  color:#000000;
+}
