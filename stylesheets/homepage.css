@@ -1,3 +1,4 @@
+<!--validated 9/16-->
 body
 {
   background-color:#c3f0f0;
@@ -9,26 +10,37 @@ h1
 {
   font-family:Arial;
   color:#012047;
+  font-size:20px;
 }
 
 h2
 {
-   font-family:Arial;
-   color:#012047;
+  font-family:Arial;
+  color:#012047;
+  font-size:16px;
+}
+
+h3
+{
+  font-family:Arial;
+  color:#012047;
+  font-size:14px;
 }
 
 section
 {
-   font-family:Arial;
-   width:300px;
-   text-align:left;
-   color:#012047;
+  font-family:Arial;
+  width:300px;
+  text-align:left;
+  color:#012047;
+  font-size:12px;
 }
 
 nav
 {
   text-align:center;
   padding:10px;
+  font-size:14px;
 }
 
 a:link, a:visited
