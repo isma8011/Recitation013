@@ -1,10 +1,10 @@
 /*validated 9/16*/
 .flex-container
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 }
 
 body
@@ -31,7 +31,7 @@ h2
 h3
 {
   font-family:Arial;
-  color:#03045E;
+  color:#00B4D8;
   font-size:16px;
 }
 
@@ -42,8 +42,9 @@ article
   text-align:left;
   background-color:#023E8A;
   padding:10px;
-  color:#03045E;
+  color:#00B4D8;
   font-size:14px;
+  border-radius:10px;
 }
 
 nav
