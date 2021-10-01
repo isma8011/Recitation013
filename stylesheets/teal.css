@@ -6,6 +6,7 @@
   align-items:center;
   flex-direction:column;
   border: 4px dashed #DE7C57;
+  padding:15px;
 }
 
 body
@@ -82,6 +83,13 @@ p
   font-size: 16px;
 }
 
+article
+{
+  width:300px;
+  text-align:left;
+  padding:10px;
+}
+
 nav
 {
   text-align:center;
@@ -99,10 +107,18 @@ a:link, a:hover
 {
   color:#de7c57;
   text-decoration:underline;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 a:link:active, a:visited:active
 {
   color:#526760;
   text-decoration:underline;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
