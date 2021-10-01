@@ -1,4 +1,13 @@
-/*validated xx*/
+/*validated 10/1*/
+.flex-container
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  border: 4px dashed #DE7C57;
+}
+
 body
 {
   background-color:#CFDEE5;
@@ -8,62 +17,69 @@ body
 
 h1
 {
-  font-family:Inconsolata;
   color:#374b4a;
-  font-size:36px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 h2
 {
-  font-family:Inconsolata;
   color:#374b4a;
-  font-size:24px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 h3
 {
-  font-family:Inconsolata;
   color:#374b4a;
-  font-size:18px;
-  text-decoration:underline;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-line: underline;
 }
 
 
 h4
 {
-  font-family:Barlow;
   color:#374b4a;
-  font-size:18px;
+  font-family: Barlow;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 
 h5
 {
-  font-family:Barlow;
   color:#374b4a;
-  font-size:16px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 
 h6
 {
-  font-family:Barlow;
   color:#374b4a;
-  font-size:14px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 p
 {
-  font-family:Barlow;
   color:#374b4a;
-  font-size:16px;
-}
-
-article
-{
-  width:300px;
-  text-align:left;
-  padding:10px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 nav
