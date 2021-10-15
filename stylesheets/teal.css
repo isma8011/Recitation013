@@ -6,7 +6,8 @@
   align-items:center;
   flex-direction:column;
   border: 4px dashed #DE7C57;
-  padding:15px;
+  margin: 10vh 10vw;
+  padding: 10vh 10vw;
 }
 
 body
@@ -23,6 +24,7 @@ h1
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  text-align: center;
 }
 
 h2
@@ -32,6 +34,7 @@ h2
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
+  text-align: center;
 }
 
 h3
@@ -121,4 +124,29 @@ a:link:active, a:visited:active
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+}
+
+button
+{
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 500;
+  color: #2A90A0;
+  font-size: 16px;
+  border: 2px solid #2A90A0;
+  box-sizing: border-box;
+  background-color: #CFDEE5;
+  transition-duration: 0.2s;
+}
+
+button:hover
+{
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 500;
+  color: #DE7C57;
+  font-size: 16px;
+  border: 2px solid #DE7C57;
+  box-sizing: border-box;
+  background-color: #CFDEE5;
 }

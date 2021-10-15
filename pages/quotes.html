@@ -1,0 +1,78 @@
+<!--validated xxx-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../stylesheets/teal.css">
+  <title>Words Generator</title>
+
+  <!--font imports-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="flex-container">
+    <h1>
+      Words Machine
+    </h1>
+
+    <h2>
+      Click the button to get a random quote or song lyrics from a selection of some of my favorites.
+    </h2>
+
+    <p id="qtext">
+
+    </p>
+
+    <button id="newQuote">
+      Generate Quote
+    </button>
+
+  </section>
+
+  <script>
+    const quotes = ["", "", "", "", "", "", "", "", "", ""];
+    quotes[0] = "Come dawn, come day, come half-awake / Come blue, come gray, come waves that break";
+    quotes[1] = "Under the bludgeonings of chance / My head is bloody, but unbowed.";
+    quotes[2] = "At the end of the day, those we love are what matters. Don't leave things unsaid.";
+    quotes[3] = "It was the last weekend of September / I stayed up all night long / Waiting for the fire ache in my heart to subside / It never happened";
+    quotes[4] = "Virtue, integrity and courage are my priorities. I can be approached, but never pushed; befriended but never coerced; killed but never shamed.";
+    quotes[5] = "Taking it for granted that you're here with me / Just tell me the truth / Am I just a lonely fabled obsessive? / That ain't got no clue";
+    quotes[6] = "Time will tell if you can figure this and work it out / No one's waiting for you anyway so don't be stressed now";
+    quotes[7] = "I wish I could show you more of yourself / I wish I could make you somebody else / But I left it way too late / Are you stuck in your own ways?";
+    quotes[8] = "Love is an act of forgiveness, a tender look, a silent understanding.";
+    quotes[9] = "You raised yourself. You'll have questions, and nobody will be there to answer them. I want you to know: I'm here, Stardust. I won't always have the answer, but I will listen, and what I tell you will be true.";
+
+    let quoteCount = 0; //variable that tells us where we're accessing in the array
+
+    //changing the quote
+    document.getElementById("newQuote").addEventListener("click", buttonClicked);
+
+    function buttonClicked()
+    {
+      console.log(quotes[quoteCount]);
+      document.getElementById("qtext").innerHTML = quotes[quoteCount];
+
+      if(quoteCount > 8)
+      {
+        quoteCount = 0; //loops back to the beginning
+      }
+
+      else
+      {
+        quoteCount++; //increments through the array
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>
