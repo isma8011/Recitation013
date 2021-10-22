@@ -1,0 +1,160 @@
+/*validated 10/1*/
+.flex-container
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin: 10vh 10vw;
+  padding: 10vh 10vw;
+}
+
+body
+{
+  background-color:#D9DEF8;
+  margin:auto;
+  padding:30px;
+}
+
+h1
+{
+  font-family: Roboto Mono;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  color: #251754;
+}
+
+h2
+{
+
+  font-family: Roboto Mono;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  color: #251754;
+}
+
+h3
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #251754;
+}
+
+h4
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #251754;
+}
+
+h5
+{
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  color: #251754;
+}
+
+h6
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #251754;
+}
+
+p
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #251754;
+}
+
+a:link:active
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #251754;
+  transition-duration: 0.2s;
+}
+
+a:link, a:hover
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #3378D7;
+}
+
+a:visited:active
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #6D6ADD;
+}
+
+button
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #251754;
+  width: 145px;
+  height: 45px;
+  background: #9AB1F0;
+  box-sizing: border-box;
+  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+button:hover
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  width: 145px;
+  height: 45px;
+  background: #3378D7;
+  box-sizing: border-box;
+  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
+  border-radius: 10px;
+}
+
+button:active
+{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 145px;
+  height: 45px;
+  background: #6D6ADD;
+  box-sizing: border-box;
+  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
+  border-radius: 10px;
+}
