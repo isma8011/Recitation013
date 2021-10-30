@@ -1,12 +1,116 @@
 /*validated 10/1*/
-.flex-container
+
+.main-container
 {
-  display:flex;
-  justify-content:center;
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:960px; /*the maximum width the container will grow to*/
+	height:70%;
+	margin:0px auto; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	/*background-color:#ffffff;*/
+	padding:0px;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+  display:block;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.banner
+{
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	text-align: center;
+
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+	grid-column-end: span 8;
+}
+
+.halfbox
+{
+	/*background-color:rgb(200,200,200);*/
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+  align-self:center;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 2;
+}
+
+.container2
+{
+	background-color:#ffffff;
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
+	text-align: center;
+
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+	grid-column-end: span 8;
+}
+
+.quarterbox
+{
+	/*background-color:rgb(200,200,200);*/
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 1;
+
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:auto;
+  align-items: center;
+}
+
+.threequarterbox
+{
+	/*background-color:rgb(200,200,200);*/
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 3;
+
+  display:grid;
+  align-self: center;
   align-items:center;
-  flex-direction:column;
-  margin: 10vh 10vw;
-  padding: 10vh 10vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.quarterimage
+{
+  margin:auto;
+  padding: 5px;
+  box-sizing:border-box;
+  grid-column-end:span 2;
+}
+
+.footer
+{
+	background-color:#ffffff;
+	margin-top:0px;
+	padding:10px;
+	box-sizing: border-box;
+	box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
+	text-align: center;
+
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items:stretch;
+	align-content:stretch;
+	grid-column-end: span 8;
+  grid-row-end: span 8;
 }
 
 body
@@ -23,7 +127,7 @@ h1
   font-weight: bold;
   font-size: 36px;
   text-align: left;
-  color: #251754;
+  color: #ffffff;
 }
 
 h2
@@ -33,8 +137,8 @@ h2
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
-  text-align: left;
-  color: #251754;
+  text-align: right;
+  color: #ffffff;
 }
 
 h3
@@ -71,6 +175,7 @@ h6
   font-weight: bold;
   font-size: 18px;
   color: #251754;
+	padding:2vw 2vh;
 }
 
 p
@@ -80,6 +185,9 @@ p
   font-weight: normal;
   font-size: 14px;
   color: #251754;
+	text-align: left;
+	padding:2vw 2vh;
+	align-self: center;
 }
 
 a:link:active
@@ -127,6 +235,7 @@ button
   box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
   border-radius: 10px;
   transition-duration: 0.2s;
+  padding: 5px;
 }
 
 button:hover
