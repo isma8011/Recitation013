@@ -21,11 +21,39 @@ h1
   font-size:30px;
 }
 
+@media screen and (max-width: 992px) {
+  h1
+  {
+    font-size:32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1
+  {
+    font-size:34px;
+  }
+}
+
 h2
 {
   font-family:Arial;
   color:#03045E;
   font-size:20px;
+}
+
+@media screen and (max-width: 992px) {
+  h2
+  {
+    font-size:22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2
+  {
+    font-size:24px;
+  }
 }
 
 h3
@@ -35,10 +63,24 @@ h3
   font-size:16px;
 }
 
+@media screen and (max-width: 992px) {
+  h3
+  {
+    font-size:18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3
+  {
+    font-size:20px;
+  }
+}
+
 article
 {
   font-family:Arial;
-  width:300px;
+  width:25%;
   text-align:left;
   background-color:#023E8A;
   padding:10px;
@@ -47,20 +89,69 @@ article
   border-radius:10px;
 }
 
+@media screen and (max-width: 992px) {
+  article
+  {
+    width:50%;
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article
+  {
+    width:100%;
+    font-size:18px;
+  }
+}
+
 nav
 {
   text-align:center;
   padding:10px;
-  font-size:14px;
 }
 
 a:link, a:visited
 {
   color:#CAF0F8;
-  text-decoration:underline;
+  text-decoration:none;
 }
 
 a:link:active, a:visited:active
 {
   color:#020F12;
+}
+
+button
+{
+  font-family:Arial;
+  width:100%;
+  text-align:center;
+  background-color:#023E8A;
+  padding:10px;
+  margin:10px;
+  color:#00B4D8;
+  font-size:14px;
+  border-radius:10px;
+  border-color:#023E8A;
+  transition-duration:0.4s;
+}
+
+button:hover
+{
+  background-color:#00B4D8;
+}
+
+@media screen and (max-width: 992px) {
+  button
+  {
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button
+  {
+    font-size:20px;
+  }
 }
