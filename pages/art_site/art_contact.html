@@ -58,7 +58,11 @@
 
         <!-- twitter embed code-->
         <section class="fullwidth">
-          <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/izvaras?ref_src=twsrc%5Etfw">Tweets by izvaras</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/izvaras?ref_src=twsrc%5Etfw">Tweets by izvaras</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+            const twttr = window.twttr
+            twttr.widgets.load()
+          </script>
         </section>
       </section>
 
