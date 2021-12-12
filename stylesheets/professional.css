@@ -1,195 +1,412 @@
+#container
+{ /*A box that will contain the entire website for centering purposes*/
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:1100px; /*the maximum width the container will grow to*/
+	margin:0px auto; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	background-color:#1B2527;
+	padding:0px;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+	box-shadow: 0px 10px 10px 5px #888888;
+
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+	align-items:stretch; /*flex-end, center, stretch, baseline*/
+}
+
 header
 {
-	background-color:rgb(200,200,200);
-	margin: 0px;
-	padding:0px;
+	width:100%;
+	margin:0px auto;
 	box-sizing:border-box;
-	text-align:center; /*left, right, center, justify*/
-	grid-area: 1 / 1 / 2 / 9; /*row start, column start, row end, column end*/
+	text-align:center;
 }
 
-.quarterbox
+article
 {
-	background-color:rgb(200,200,200);
-	margin:10px;
-	padding:20px;
+	width:100%;
+	margin:0px;
+	padding:0%;
+	height:80vh;
 	box-sizing:border-box;
-	text-align:center; /*left, right, center, justify*/
-	grid-column-end: span 1;
 
-  display:grid;
-  grid-template-columns:100%;
-  grid-template-rows:auto;
-  align-items: center;
+	background-color: #E1E1E1;
+	opacity:1;
+	background-image:  radial-gradient(#6FAB66 2px, transparent 2px), radial-gradient(#6FAB66 2px, transparent 2px);
+	background-size: 80px 80px;
+	background-position: 0 0,40px 40px;
+
+
+	/*The article needs its own flex properties since it contains sections
+	which will be flexing*/
+	text-align: center;
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:space-between; /*flex-start, flex-end, center, stretch, space-between, space-around*/
+	align-items:center; /*flex-end, center, stretch, baseline*/
 }
 
-.threequarterbox
+.fullwidth
 {
-	background-color:rgb(200,200,200);
-	margin:10px;
-	padding:20px;
+	text-align: center;
+	margin:0%;
+	width:100%;
+	padding:0%;
 	box-sizing:border-box;
-	text-align:center; /*left, right, center, justify*/
-	grid-column-end: span 3;
+}
 
-  display:grid;
-  align-self: center;
-  align-items:center;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
+.halfwidth
+{
+	text-align: center;
+	margin:2%;
+	width:46%;
+	padding:0%;
+	box-sizing:border-box;
+}
+
+.quarterwidth
+{
+	text-align: center;
+	margin:0%;
+	width:25%;
+	height:100%;
+	padding:0%;
+	box-sizing:border-box;
+	/*border: 2px solid red;*/
+
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:column; /*row, row-reverse, column, column-reverse*/
+	align-items:center; /*flex-end, center, stretch, baseline*/
+}
+
+.threequarterswidth
+{
+	text-align: center;
+	margin: 0%;
+	width: 75%;
+	height: 100%;
+	padding: 10%;
+	box-sizing: border-box;
+
+	/*border: 2px solid red;*/
+
+	text-align: center;
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:column; /*row, row-reverse, column, column-reverse*/
+	align-items:center; /*flex-end, center, stretch, baseline*/
+}
+
+.threequarterswidth2
+{
+	text-align: center;
+	margin: 0%;
+	width: 75%;
+	height: 100%;
+	padding: 2% 10%;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	/*border: 2px solid red;*/
+
+	text-align: center;
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-items:center; /*flex-end, center, stretch, baseline*/
 }
 
 body
 {
-  background-color:#D9DEF8;
-  margin:auto;
-  padding:30px;
+  background-color:#e1e1e1;
+  margin:0px;
+  padding:.5vh;
 }
 
 h1
 {
-  font-family: Roboto Mono;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: left;
-  color: #ffffff;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	color: #6FAB66;
 }
 
 h2
 {
 
-  font-family: Roboto Mono;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: right;
-  color: #ffffff;
+	font-family: Playfair Display;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 36px;
+  color: #446D6F;
+	background-color: #E1E1E1;
 }
 
 h3
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: #251754;
+	font-family: Playfair Display;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 24px;
+  color: #1F492C;
+	background-color: #E1E1E1;
 }
 
 h4
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  color: #251754;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+  color: #1F492C;
+	background-color: #E1E1E1;
 }
 
 h5
 {
-  font-family: Roboto Condensed;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  color: #251754;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #1F492C;
+	background-color: #E1E1E1;
 }
 
 h6
 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  color: #251754;
-	padding:2vw 2vh;
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+  color: #1F492C;
+	background-color: #E1E1E1;
 }
 
 p
 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: #251754;
-	text-align: left;
-	padding:2vw 2vh;
-	align-self: center;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #1B2527;
+	background-color: #E1E1E1;
 }
 
-a:link:active
+a:link
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration-line: underline;
-  color: #251754;
-  transition-duration: 0.2s;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+  color: #1F492C;
+	text-decoration: none;
 }
 
-a:link, a:hover
+a:hover
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration-line: underline;
-  color: #3378D7;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+  color: #6FAB66;
+	text-decoration: none;
 }
 
-a:visited:active
+a:visited
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration-line: underline;
-  color: #6D6ADD;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: #446D6F;
+	text-decoration: none;
 }
 
 button
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #251754;
-  width: 145px;
-  height: 45px;
-  background: #9AB1F0;
-  box-sizing: border-box;
-  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
-  border-radius: 10px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+  color: #1F492C;
+
+	width: 260px;
+	height: 60px;
+	background: #E1E1E1;
+	border: 2px solid #1F492C;
+	box-sizing: border-box;
   transition-duration: 0.2s;
-  padding: 5px;
+	padding: 0%;
+	margin:auto;
 }
 
 button:hover
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #ffffff;
-  width: 145px;
-  height: 45px;
-  background: #3378D7;
-  box-sizing: border-box;
-  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
-  border-radius: 10px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+  color: #6FAB66;
+
+	width: 260px;
+	height: 60px;
+	background: #1B2527;
+	border: 2px solid #6FAB66;
+	box-sizing: border-box;
+	padding: 0%;
+	margin:auto;
 }
 
 button:active
 {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #FFFFFF;
-  width: 145px;
-  height: 45px;
-  background: #6D6ADD;
-  box-sizing: border-box;
-  box-shadow: -5px 5px 10px 1px rgba(37, 23, 84, 0.25);
-  border-radius: 10px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+  color: #6FAB66;
+
+	width: 260px;
+	height: 60px;
+	background: #1B2527;
+	border: 2px solid #6FAB66;
+	box-sizing: border-box;
+	padding: 0%;
+	margin:auto;
+}
+
+img
+{
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+
+footer
+{
+	font-family: Open Sans;
+	font-style: normal;
+	text-align: center;
+	font-size: 12px;
+	color: #1B2527;
+	margin:0%;
+	width:96%;
+	padding:1%;
+	box-sizing:border-box;
+}
+
+/*Image lightbox code provided by https://webdevtrick.com/image-lightbox-in-pure-css/ */
+/***************************************/
+.thumb {
+    max-height: 171px;
+}
+
+.lightbox {
+    position: fixed;
+    z-index: 999;
+    height: 0;
+    width: 0;
+    text-align: center;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+    vertical-align: middle;
+    opacity: 0;
+}
+.lightbox:target {
+    outline: none;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1 !important;
+
+}
+.lightbox:target img {
+    vertical-align: middle;
+    opacity: 1;
+    webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+.light-btn {
+    color: #E1E1E1;
+    background-color: #6FAB66;
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    top: 45%;
+    z-index: 99;
+}
+.light-btn:hover {
+	color: #ffffff;
+    background-color: #111;
+}
+.btn-prev {
+    left: 7%;
+}
+.btn-next {
+    right: 7%;
+}
+.btn-close {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #E1E1E1;
+    background-color: #6FAB66;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.btn-close:hover {
+	color: #ffffff;
+    background-color: #111;
+}
+
+/*Fade in code provided by https://blog.hubspot.com/website/css-fade-in // Tremaine Eto
+*/
+.fade-in {
+animation: fadeIn ease 3s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }

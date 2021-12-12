@@ -83,7 +83,7 @@ article
 	box-sizing:border-box;
 	font-family: Calibri;
 
-	/*The article needs its own flex properties since it contains sections 
+	/*The article needs its own flex properties since it contains sections
 	which will be flexing*/
 	display:flex;
 	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
@@ -101,7 +101,7 @@ article
 	box-sizing:border-box;
 	font-family: Calibri;
 
-	/*The article needs its own flex properties since it contains sections 
+	/*The article needs its own flex properties since it contains sections
 	which will be flexing*/
 	display:flex;
 	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
@@ -197,11 +197,11 @@ footer {
 }
 .lightbox:target {
     outline: none;
- 	
+
     width: 100%;
     height: 100%;
     opacity: 1 !important;
-    
+
 }
 .lightbox:target img {
     /*border: solid 17px white;*/
